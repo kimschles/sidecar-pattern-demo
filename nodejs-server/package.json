@@ -1,0 +1,24 @@
+{
+  "name": "sidecar-pattern-demo",
+  "version": "1.0.0",
+  "description": "Create a 5-10 minute video lesson on one of the following distributed systems patterns to a software developer who is new to distributed systems design patterns. You can assume they are already proficient at software development, but they may not have had much exposure to distributed systems development. In other words, they know how to code, but they may not have had any formal training in distributed systems development.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimschles/sidecar-pattern-demo.git"
+  },
+  "author": "Kim Schlesinger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kimschles/sidecar-pattern-demo/issues"
+  },
+  "homepage": "https://github.com/kimschles/sidecar-pattern-demo#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
