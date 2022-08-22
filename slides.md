@@ -13,8 +13,6 @@
 ## Goals 
 1. Define "sidecar pattern" 
 1. Explain how to identify the sidecar pattern in a code repo 
-1. List at least three features in a software project that suggests it uses the sidecar pattern
-1. Identify some pros and cons of using the sidecar pattern 
 
 
 ---
@@ -35,8 +33,6 @@
 ## Goals 
 1. Define "sidecar pattern" 
 1. Explain how to identify the sidecar pattern in a code repo 
-1. List at least three features in a software project that suggests it uses the sidecar pattern
-1. Identify some pros and cons of using the sidecar pattern 
 
 ---
 
@@ -102,15 +98,12 @@ Source: [Azure Cloud Design Patterns: Sidecar Pattern](https://docs.microsoft.co
 ## Goals 
 1. Define "sidecar pattern" 
 1. Explain how to identify the sidecar pattern in a code repo 
-1. List at least three features in a software project that suggests it uses the sidecar pattern
 
 ---
 
 ## Goals 
 1. Define "sidecar pattern" 
 1. Explain how to identify the sidecar pattern in a code repo 
-1. List at least three features in a software project that suggests it uses the sidecar pattern
-1. Identify some pros and cons of using the sidecar pattern 
 
 ---
 
@@ -121,7 +114,8 @@ Source: [Azure Cloud Design Patterns: Sidecar Pattern](https://docs.microsoft.co
 --- 
 # Sidecar Pattern
 - main app and helper app
-- good for a legacy app that needs to be migrated to the cloud 
+- The containers share resources on a host including CPU, memory, a file system and networking services
+
 
 ![inline left 35%](https://docs.google.com/drawings/d/e/2PACX-1vSe-AwSERq7AIkfAGkl0J6ufQ2zncfDuNLxgWsJ9hI_0i4itecHKn1Yqt9XAShLxtMM_4ZRj9jnxVLm/pub?w=1440&h=1080)
 
@@ -129,33 +123,15 @@ Source: [Azure Cloud Design Patterns: Sidecar Pattern](https://docs.microsoft.co
 ---
 # In Code 
 - 2 containers 
-- The containers share resources on a host including CPU, memory, a file system and networking services
+- Shared host
 - (Optional) Different languages and operating systems 
 
 --- 
-# In Software
-- "Runs alongside" 
-- Works with many different languages and frameworks
-- Service Mesh 
-- Proxy 
-- Sending logs to an external service 
-- Configuration 
+## Goals 
+1. Define "sidecar pattern" 
+1. Explain how to identify the sidecar pattern in a code repo 
 
 ---
-[.column]
-
-# Pros
-- helper app can be written in different language and reused
-- low latency 
-- add-on
-
-[.column]
-
-# Cons
-- resource intensive 
-- security 
-
---- 
 
 ## Resources 
 - [Designing Distributed Systems by Brendan Burns](https://azure.microsoft.com/mediahandler/files/resourcefiles/designing-distributed-systems/Designing_Distributed_Systems.pdf)
