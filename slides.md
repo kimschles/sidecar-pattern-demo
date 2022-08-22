@@ -66,7 +66,7 @@ Source: [Cycle World: 2021 Ural Gear Up Geo First Ride](https://www.cycleworld.c
 ---
 ## Sidecar Pattern
 
-![inline left 99%](https://dmd0822.files.wordpress.com/2018/03/031318_1606_thesidecarp2.jpg)
+![inline left](https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/sidecar.png)
 
 Source: [Azure Cloud Design Patterns: Sidecar Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar)
 
@@ -84,7 +84,7 @@ Source: [Azure Cloud Design Patterns: Sidecar Pattern](https://docs.microsoft.co
 
 # Example 
 
-Node.js server + access log container
+![inline left](https://docs.google.com/drawings/d/e/2PACX-1vSe-AwSERq7AIkfAGkl0J6ufQ2zncfDuNLxgWsJ9hI_0i4itecHKn1Yqt9XAShLxtMM_4ZRj9jnxVLm/pub?w=1440&h=1080)
 
 ---
 
@@ -115,6 +115,45 @@ Node.js server + access log container
 ---
 
 ## Recap 
+
+![inline left 90%](https://media.giphy.com/media/131eoolIHi5gzK/giphy.gif)
+
+--- 
+# Sidecar Pattern
+- main app and helper app
+- good for a legacy app that needs to be migrated to the cloud 
+
+![inline left 35%](https://docs.google.com/drawings/d/e/2PACX-1vSe-AwSERq7AIkfAGkl0J6ufQ2zncfDuNLxgWsJ9hI_0i4itecHKn1Yqt9XAShLxtMM_4ZRj9jnxVLm/pub?w=1440&h=1080)
+
+
+---
+# In Code 
+- 2 containers 
+- The containers share resources on a host including CPU, memory, a file system and networking services
+- (Optional) Different languages and operating systems 
+
+--- 
+# In Software
+- "Runs alongside" 
+- Works with many different languages and frameworks
+- Service Mesh 
+- Proxy 
+- Sending logs to an external service 
+- Configuration 
+
+---
+[.column]
+
+# Pros
+- helper app can be written in different language and reused
+- low latency 
+- add-on
+
+[.column]
+
+# Cons
+- resource intensive 
+- security 
 
 --- 
 
